@@ -1,0 +1,2 @@
+# PoC
+mini batch pipeline 
