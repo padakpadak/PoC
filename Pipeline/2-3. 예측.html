@@ -9,10 +9,10 @@
 
 
 <style type="text/css">
-    pre { line-height: 125%; margin: 0; }
-td.linenos pre { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
-span.linenos { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
-td.linenos pre.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+    pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
 span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
 .highlight .hll { background-color: var(--jp-cell-editor-active-background) }
 .highlight { background: var(--jp-cell-editor-background); color: var(--jp-mirror-editor-variable-color) }
@@ -14316,7 +14316,7 @@ a.anchor-link {
         <span class="p">,(</span><span class="s2">&quot;spark.sql.execution.arrow.enabled&quot;</span><span class="p">,</span><span class="s2">&quot;true&quot;</span><span class="p">)</span>
     <span class="p">]</span>
     
-    <span class="n">conf</span> <span class="o">=</span> <span class="n">SparkConf</span><span class="p">()</span><span class="o">.</span><span class="n">setAppName</span><span class="p">(</span><span class="s1">&#39;predict|&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">setAll</span><span class="p">(</span><span class="n">settings</span><span class="p">)</span>
+    <span class="n">conf</span> <span class="o">=</span> <span class="n">SparkConf</span><span class="p">()</span><span class="o">.</span><span class="n">setAppName</span><span class="p">(</span><span class="s1">&#39;predict&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">setAll</span><span class="p">(</span><span class="n">settings</span><span class="p">)</span>
     <span class="n">spark</span> <span class="o">=</span> <span class="n">SparkSession</span><span class="o">.</span><span class="n">builder</span><span class="o">.</span><span class="n">config</span><span class="p">(</span><span class="n">conf</span><span class="o">=</span><span class="n">conf</span><span class="p">)</span><span class="o">.</span><span class="n">enableHiveSupport</span><span class="p">()</span><span class="o">.</span><span class="n">getOrCreate</span><span class="p">()</span>
     
     <span class="k">return</span> <span class="n">spark</span>
@@ -14356,7 +14356,8 @@ a.anchor-link {
         <span class="n">pip_install</span><span class="p">(</span><span class="n">shap</span><span class="p">)</span>
         
 <span class="k">def</span> <span class="nf">pip_install</span><span class="p">(</span><span class="n">package</span><span class="p">):</span>
-    <span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="s1">&#39;echo dpcore | su - dpcore -c &quot;pip-3.6 install --user &#39;</span> <span class="o">+</span> <span class="n">package</span> <span class="o">+</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">user</span> <span class="o">=</span> <span class="s2">&quot;user&quot;</span>
+    <span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;echo </span><span class="si">{</span><span class="n">user</span><span class="si">}</span><span class="s1"> | su - </span><span class="si">{</span><span class="n">user</span><span class="si">}</span><span class="s1"> -c &quot;pip-3.6 install --user &#39;</span> <span class="o">+</span> <span class="n">package</span> <span class="o">+</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
      </div>
