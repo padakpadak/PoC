@@ -1,5 +1,5 @@
 # PoC
-kaggle lending club 데이터 기반 대출 부실 위험도 측정 모델 및 준실시간 예측(mini batch) 파이프라인 구축 프로젝트입니다.
+kaggle lending club 데이터 기반 대출 사기 위험도 측정 모델 및 준실시간 예측(mini batch) 파이프라인 구축 프로젝트입니다.
 
 
 
