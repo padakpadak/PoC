@@ -25,7 +25,7 @@ kaggle lending club 데이터 기반 대출 사기 위험도 측정 모델 및 �
   1-1. <a href="https://seulbiso.github.io/PoC/Pipeline/1-1. 테이블 생성.html">테이블 생성</a><br>
   1-2. <a href="https://seulbiso.github.io/PoC/Pipeline/1-2. 모델 로드.html">모델 로드</a><br>
   </ol>
-2. <a href="https://padakpadak.github.io/PoC/Pipeline/2. 예측 파이프라인.html">예측 파이프라인</a><br>
+2. <a href="https://seulbiso.github.io/PoC/Pipeline/2. 예측 파이프라인.html">예측 파이프라인</a><br>
   <ol style="list-style-type:decimal" start="1">
     2-1. <a href="https://seulbiso.github.io/PoC/Pipeline/2-1. T0 수집.html">T0 수집</a><br>
     2-2. <a href="https://seulbiso.github.io/PoC/Pipeline/2-2. T1 전처리.html">T1 전처리</a><br>
