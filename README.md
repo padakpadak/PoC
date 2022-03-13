@@ -27,8 +27,8 @@ kaggle lending club 데이터 기반 대출 사기 위험도 측정 모델 및 �
   </ol>
 2. <a href="https://seulbiso.github.io/fraud-scoring-model-PoC/Pipeline/2. 예측 파이프라인.html">예측 파이프라인</a><br>
   <ol style="list-style-type:decimal" start="1">
-    2-1. <a href="https://seulbiso.github.io/fraud-scoring-model-PoC/Pipeline/2-1. T0 수집.html">T0 수집</a><br>
-    2-2. <a href="https://seulbiso.github.io/fraud-scoring-model-PoC/Pipeline/2-2. T1 전처리.html">T1 전처리</a><br>
+    2-1. <a href="https://seulbiso.github.io/fraud-scoring-model-PoC/Pipeline/2-1. DakeLake(T0) 수집.html">T0 수집</a><br>
+    2-2. <a href="https://seulbiso.github.io/fraud-scoring-model-PoC/Pipeline/2-2. Mart(T1) 전처리.html">T1 전처리</a><br>
     2-3. <a href="https://seulbiso.github.io/fraud-scoring-model-PoC/Pipeline/2-3. 예측.html">예측</a><br>
   </ol>
 </ol>
